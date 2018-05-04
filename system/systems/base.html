@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    `
+    <title>基本信息录入</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<form action="" method="post">
+    <div class="container">
+        <!--上面文字-->
+        <div class="navContainer">
+            <p class="navTop"><img src="image/logo.png" alt="">湖南麓川信息科技有限公司</p>
+            <p class="navBody">
+                新员工入职信息登记
+                <!--<span>工号:<b>20180312</b>|<a>退出</a></span>-->
+            </p>
+            <ul class="navFooter">
+                <li class="gray1">1</li>
+                <li class="gray">2</li>
+                <li class="gray">3</li>
+                <li class="gray">4</li>
+                <li class="gray">5</li>
+                <li class="gray">6</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+
+        <!--中间表格-->
+        <div class="bodyContainer">
+            <div>
+                <table>
+                    <tr class="bodyContainerTop">
+                        <td colspan="4">基本信息
+                        </td>
+                    </tr>
+
+                    <tr class="bodyContainerFooter">
+                        <td>姓名：<input type="text" name="baseUserName">
+                        </td>
+                        <td>入职部门：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select name="baseEntrySection">
+                                <option value="xz">请选择</option>
+                                <option value="front">产品部</option>
+                                <option value="tech">技术部</option>
+                                <option value="business">商务部</option>
+                                <option value="practice">实习部</option>
+                                <option value="administration">行政部</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr class="bodyContainerFooter">
+                        <td>
+                            性别:&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="baseSex" value="男">男
+                            <input type="radio" name="baseSex" value="女">女
+                        </td>
+                        <td>
+                            入职岗位：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select name="baseStation">
+                                <option value="xz">请选择</option>
+                                <option value="front">前端</option>
+                                <option value="end">java</option>
+                                <option value="product">产品</option>
+                                <option value="tester">测试</option>
+                                <option value="other">人事</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr class="bodyContainerFooter">
+                        <td>
+                            <label for="meetingP">出生日期：</label>
+                            <input id="meetingP" name="baseDateBirth" type="date" value="myDate.toLocaleDateString();"/>
+                        </td>
+                        <td>
+                            <label for="meetingD">入职时间：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input id="meetingD" name="baseEntryDate" type="date"/>
+                        </td>
+                    </tr>
+
+                    <tr class="bodyContainerFooter">
+                        <td>身高：<input type="text" name="baseHeight">cm</td>
+                        <td>
+                            学历：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;
+                            <select name="baseRecord">
+                                <option value="请选择">请选择</option>
+                                <option value="初中">初中</option>
+                                <option value="高中">高中</option>
+                                <option value="专科">专科</option>
+                                <option value="本科">本科</option>
+                                <option value="硕士">硕士</option>
+                                <option value="博士">博士</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr class="bodyContainerFooter">
+                        <td>体重：<input type="text" name="baseWeight">kg</td>
+                        <td>毕业院校：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
+                                                                                        name="baseUniversity"></td>
+                    </tr>
+
+                    <tr class="bodyContainerFooter">
+                        <td>
+                            籍贯：省份：<select id="province" name="baseProvince" onChange="changeSelect();">
+                            <option value=""> 请选择</option>
+                            <option value=""> 湖南</option>
+                            <option value=""> 山东</option>
+                            <option value=""> 江苏</option>
+                            <option value=""> 浙江</option>
+                            <option value=""> 福建</option>
+                            <option value=""> 河北</option>
+                            <option value=""> 广东</option>
+                            <option value=""> 海南</option>
+                            <option value=""> 广西</option>
+                            <option value=""> 云南</option>
+                            <option value=""> 重庆</option>
+                            <option value=""> 湖北</option>
+                            <option value=""> 河南</option>
+                            <option value=""> 四川</option>
+                            <option value=""> 江西</option>
+                            <option value=""> 青海</option>
+                            <option value=""> 山西</option>
+                            <option value=""> 陕西</option>
+                            <option value=""> 甘肃</option>
+                            <option value=""> 贵州</option>
+                            <option value=""> 安徽</option>
+                            <option value=""> 辽宁</option>
+                            <option value=""> 吉林</option>
+                            <option value=""> 黑龙江</option>
+                            <option value=""> 内蒙古</option>
+                            <option value=""> 宁夏</option>
+                            <option value=""> 西藏</option>
+                            <option value=""> 新疆</option>
+                            <option value=""> 北京</option>
+                            <option value=""> 天津</option>
+                            <option value=""> 上海</option>
+                            <option value=""> 香港</option>
+                            <option value=""> 澳门</option>
+                            <option value=""> 台湾</option>
+                            <option value=""> 海外</option>
+
+                        </select>
+                            城市：
+                            <select id="city" name="baseCity">
+                                <option value="">请选择</option>
+                            </select>
+                        </td>
+                        <td>专业：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;<input type="text" name="baseMajor"></td>
+                    </tr>
+
+                    <tr class="bodyContainerFooter">
+                        <td>民族：
+                            <select id="national" name="baseNation">
+                            </select>
+                        </td>
+                        <td>联系电话：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" name="baseTel"></td>
+                    </tr>
+
+                    <tr class="bodyContainerFooter">
+                        <td>婚姻：
+                            <select name="baseMarriage">
+                                <option value="0">请选择</option>
+                                <option value="01">结婚</option>
+                                <option value="02">离婚</option>
+                                <option value="03">未婚</option>
+                            </select>
+                        </td>
+                        <td>微信号：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" name="baseWeChat"></td>
+                    </tr>
+
+                    <tr class="bodyContainerFooter">
+                        <td>身份证号：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="baseId"></td>
+                        <td>邮箱地址：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" name="baseMail"></td>
+                    </tr>
+
+                    <tr class="bodyContainerFooter" id="colsFooter">
+                        <td colspan="2">户口所在地：<input type="text" name="baseResidencePlace"></td>
+                    </tr>
+
+                    <tr class="bodyContainerFooter" id="colsFooterTwo">
+                        <td colspan="2">现居住地址：<input type="text" name="baseAddress"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p>
+            <!--下面按钮-->
+            <div class="footerContainer">
+
+        <p class="clear"></p>
+    </div>
+    </p>
+    </div>
+</form>
+
+<button id="nextStep" type="submit">下一步</button>
+<script>
+
+  //城市下拉相关js
+  var city = [["请选择"], ['长沙市', '株洲市', '湘潭市', '衡阳市', '邵阳市', '岳阳市', '常德市', '张家界市',
+    '益阳市', '郴州市', '永州市', '怀化市', '娄底市'],
+
+    ['济南市', '青岛市', '淄博市', '枣庄市', '东营市', '烟台市', '潍坊市', '济宁市', '泰安市',
+      '威海市', '日照市', '莱芜市', '临沂市', '德州市', '聊城市', '滨州市', '菏泽市'],
+
+    ['南京市', '苏州市', '无锡市', '常州市', '南通市', '扬州市', '镇江市', '泰州市', '盐城市',
+      '连云港市', '宿迁市', '淮安市', '徐州市'],
+
+    ['杭州市', '宁波市', '温州市', '嘉兴市', '湖州市', '绍兴市', '金华市',
+      '衢州市', '舟山市', '台州市', '丽水市'],
+
+    ['福州市', '厦门市', '莆田市', '三明市', '泉州市', '漳州市', '南平市', '龙岩市', '宁德市'],
+
+    ['石家庄', '唐山市', '邯郸市', '秦皇市岛', '保市定', '张家市口', '承德市', '廊坊市',
+      '沧州市', '衡水市', '邢台市'],
+
+    ['广州市', '深圳市', '珠海市', '汕头市', '韶关市', '佛山市', '江门市', '湛江市', '茂名市', '肇庆市',
+      '惠州市', '梅州市', '汕尾市', '河源市', '阳江市', '清远市', '东莞市', '中山市', '潮州市', '揭阳市', '云浮市'],
+
+    ['文昌市', '琼海市', '万宁市', '五指山市', '东方市', '儋州市'],
+
+    ['南宁市', '柳州市', '桂林市', '梧州市', '北海市', '防城港市', '钦州市', '贵港市', '玉林市',
+      '百色市', '贺州市', '河池市', '来宾市', '崇左市'],
+
+    ['昆明市', '曲靖市', '玉溪市', '保山市', '昭通市', '丽江市', '普洱市', '临沧市'],
+
+    ['重庆市区', '重庆市辖区'],
+
+    ['武汉市', '黄石市', '十堰市', '荆州市', '宜昌市', '襄樊市', '鄂州市', '荆门市', '孝感市', '黄冈市', '咸宁市', '随州市'],
+
+    ['郑州市', '开封市', '洛阳市', '平顶山市', '安阳市', '鹤壁市', '新乡市', '焦作市', '濮阳市', '许昌市', '漯河市',
+      '三门峡市', '南阳市', '商丘市', '信阳市', '周口市', '驻马店市'],
+
+    ['成都市', '自贡市', '攀枝花市', '泸州市', '德阳市', '绵阳市', '广元市', '遂宁市', '内江市', '乐山市',
+      '南充市', '眉山市', '宜宾市', '广安市', '达州市', '雅安市', '巴中市', '资阳市'],
+
+    ['南昌市', '景德镇市', '萍乡市', '九江市', '新余市', '鹰潭市', '赣州市', '吉安市', '宜春市', '抚州市', '上饶市'],
+
+    ['西宁市', '其它地区'],
+
+    ['太原市', '大同市', '阳泉市', '长治市', '晋城市', '朔州市', '晋中市', '运城市', '忻州市', '临汾市', '吕梁市'],
+
+    ['西安市', '铜川市', '宝鸡市', '咸阳市', '渭南市', '延安市', '汉中市', '榆林市', '安康市', '商洛市'],
+
+    ['兰州市', '金昌市', '白银市', '天水市', '嘉峪关市', '武威市', '张掖市', '平凉市', '酒泉市', '庆阳市', '定西市', '陇南市'],
+
+    ['贵阳市', '六盘水市', '遵义市', '安顺市'],
+
+    ['合肥市', '芜湖市', '蚌埠市', '淮南市', '马鞍山市', '淮北市', '铜陵市', '安庆市', '黄山市',
+      '滁州市', '阜阳市', '宿州市', '巢湖市', '六安市', '亳州市', '池州市', '宣城市'],
+
+    ['沈阳市', '大连市', '鞍山市', '抚顺市', '本溪市', '丹东市', '锦州市', '营口市',
+      '阜新市', '辽阳市', '盘锦市', '铁岭市', '朝阳市', '葫芦岛市'],
+
+    ['长春市', '吉林市', '四平市', '辽源市', '通化市', '白山市', '松原市', '白城市', '延边州', '长白山管委会'],
+
+    ['哈尔滨市', '齐齐哈尔市', '大庆市', '佳木斯市', '牡丹江市', '七台河市', '双鸭山市', '黑河市',
+      '鸡西市', '伊春市', '绥化市', '鹤岗市', '加格达奇市'],
+
+    ['呼和浩特市', '包头市', '乌海市', '赤峰市', '通辽市', '鄂尔多斯市', '呼伦贝尔市', '巴彦淖尔市', '乌兰察布市'],
+
+    ['银川市', '石嘴山市', '吴忠市', '固原市', '中卫市'],
+
+    ['拉萨市', '其他地区'],
+
+    ['乌鲁木齐市', '克拉玛依市', '其他地区'],
+
+    ['北京'],
+    ['天津'],
+    ['上海'],
+    ['香港'],
+    ['澳门'],
+    ['台湾'],
+    ['海外'],
+  ];
+
+
+  function changeSelect() {
+    var provinceSel = document.getElementById("province");
+    var citySel = document.getElementById("city");
+
+    clearSelect(citySel);   //清空城市列表框中原有数据，不然当选择省份的时候，城市数据不会跟着改变。
+
+    var index = provinceSel.selectedIndex;//selectedIndex下拉框选中时的位置
+    for (var i = 0; i < city[index].length; i++) {
+      citySel.options[i] = new Option(city[index][i]);
+    }
+  }
+
+  function clearSelect(select) {//清空列表框中的信息，主要用来清除城市列表框的数据
+    while (select.length > 0) {
+      select.options[0] = null;   //将列表框中的第一项删除
+    }
+  }
+
+  //民族下拉相关js
+  var national = [
+    "请选择", "汉族", "壮族", "满族", "回族", "苗族", "维吾尔族", "土家族", "彝族", "蒙古族",
+    "藏族", "布依族", "侗族", "瑶族", "朝鲜族", "白族", "哈尼族",
+    "哈萨克族", "黎族", "傣族", "畲族", "傈僳族", "仡佬族", "东乡族", "高山族",
+    "拉祜族", "水族", "佤族", "纳西族", "羌族", "土族", "仫佬族", "锡伯族",
+    "柯尔克孜族", "达斡尔族", "景颇族", "毛南族", "撒拉族", "布朗族", "塔吉克族",
+    "阿昌族", "普米族", "鄂温克族", "怒族", "京族", "基诺族", "德昂族", "保安族",
+    "俄罗斯族", "裕固族", "乌孜别克族", "门巴族", "鄂伦春族", "独龙族", "塔塔尔族", "赫哲族", "珞巴族"
+  ];
+  window.onload = function () {
+    var nat = document.getElementById("national");
+    for (var i = 0; i < national.length; i++) {
+      var option = document.createElement('option');
+      option.value = i;//option的值相当于是数组的下标记
+      var txt = document.createTextNode(national[i]);
+      //Jquery.append(document.createTextNode(“<a href="http://www.baidu.com">百度</a>”))则显示的是:<a href="http://www.baidu.com">百度</a>文本。
+      option.appendChild(txt);
+      nat.appendChild(option);
+    }
+  }
+
+  $("#nextStep").click(function () {
+    var a = $("[name='baseEntrySection'] option:selected").text();
+    var b = $("[name='baseUserName']").val();
+    var c = $("input[name='baseSex']:checked").val();
+    var d = $("[name='baseStation'] option:checked").text();
+    var e = $("[name='baseDateBirth']").val();
+    var f = $("[name='baseEntryDate']").val();
+    var g = $("[name='baseProvince'] option:checked").text();
+    var h = $("[name='baseCity'] option:checked").val();
+    var i = $("[name='baseHeight'] ").val();
+
+    var t = $("[name='baseRecord'] option:checked").val();
+    var j = $("[name='baseWeight'] ").val();
+    var k = $("[name='baseUniversity'] ").val();
+    var l = $("[name='baseMajor'] ").val();
+    var n = $("[name='baseNation'] option:checked").text();
+    var m = $("[name='baseTel'] ").val();
+    var o = $("[name='baseMarriage'] option:checked").val();
+    var p = $("[name='baseWeChat'] ").val();
+    var q = $("[name='baseId'] ").val();
+    var x = $("[name='baseMail'] ").val();
+    var y = $("[name='baseResidencePlace'] ").val();
+    var z = $("[name='baseAddress'] ").val();
+    var value = (a == "请选择" || a == null || c == "" || c == null || b == "" || b == null || d == "请选择" || e == null || e == "" ||
+      f == null || f == "" || g == null || g == "请选择" || i == null || i == "" || t == null || t == ""
+      || j == null || j == "" || k == null || k == "" || l == null || l == "" || n == null || n == "请选择" || m == null || m == ""
+      || o == null || o == "请选择" || p == null || p == "" || q == null || q == "请选择" || x == null || x == "" || y == null || y == ""
+      || z == null || z == "");
+    if (value == true) {
+      alert("有空选项未选择")
+      return;
+    }
+
+    var userToken = localStorage.getItem("token");
+    // 处理表单验证和交给后台处理的逻辑
+    $.ajax({
+      type: "POST",
+      url: "http://192.168.0.124:8080/api/v1/baseinfo/save",
+      dataType: "json",
+      header:{
+        Accept:"json; charset-utf-8",
+        userToken: userToken
+      },
+
+      data: {
+        "baseEntrySection": $("[name='baseEntrySection'] option:selected").text(),
+        "baseUserName": $("[name='baseUserName']").val(),
+        "baseStation": $("[name='baseStation'] option:checked").text(),
+        "baseSex": $("input[name='baseSex']:checked").val(),
+        "baseDateBirth": $("[name='baseDateBirth']").val(),
+        "baseEntryDate": $("[name='baseEntryDate']").val(),
+        "baseProvince": $("[name='baseProvince'] option:checked").text(),
+        "baseCity": $("[name='baseCity'] option:checked").text(),
+        "baseHeight": $("[name='baseHeight'] ").val(),
+        "baseRecord": $("[name='baseRecord'] option:checked").val(),
+        "baseWeight": $("[name='baseWeight'] ").val(),
+        "baseUniversity": $("[name='baseUniversity'] ").val(),
+        "baseMajor": $("[name='baseMajor'] ").val(),
+        "baseNation": $("[name='baseNation'] option:checked").text(),
+        "baseTel": $("[name='baseTel'] ").val(),
+        "baseWeChat": $("[name='baseWeChat'] ").val(),
+        "baseMarriage": $("[name='baseMarriage'] option:checked").val(),
+        "baseId": $("[name='baseId'] ").val(),
+        "baseMail": $("[name='baseMail'] ").val(),
+        "baseResidencePlace": $("[name='baseResidencePlace'] ").val(),
+        "baseAddress": $("[name='baseAddress'] ").val()
+      },
+
+      success: function (json) {
+        if (json.code == 0) {
+          window.location.href = "educate.html";
+          // 录入成功
+        } else {
+          // 录入失败
+          return;
+        }
+      }
+    })
+
+  })
+
+</script>
+</body>
+</html>

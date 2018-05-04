@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提交并预览</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/cun.js"></script>
+</head>
+<body>
+<form>
+    <div class="container">
+        <!--上面文字-->
+        <div class="navContainer">
+            <p class="navTop"><img src="image/logo.png" alt="">湖南麓川信息科技有限公司</p>
+            <p class="navBody">
+                新员工入职信息登记
+                <!--<span>工号:<b>20180312</b>|<a>退出</a></span>-->
+            </p>
+            <ul class="navFooter">
+                <li class="gray">1</li>
+                <li class="gray">2</li>
+                <li class="gray">3</li>
+                <li class="gray">4</li>
+                <li class="gray">5</li>
+                <li class="gray1">6</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+
+
+
+        <div class="bodyContainer">
+            <table class="bodyContainerFooter">
+                <tr>
+
+                    <td class="regText">
+                        <label >
+                            <input name="" type="checkbox" value="" id="regText" style="zoom:180%;">本人郑重申明，上述资料全部属实，
+                            可供查证，如有虚假，愿承担一切责任。</label>
+
+                        </br></br>
+
+                        <p type="submit" disabled id="regBtn" class="regBtn" onclick="skip()">提交并预览</p>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+
+    </div>
+</form>
+<script>
+    $(function () {
+//选中时改变‘确认提交’按钮的背景颜色，并且把按钮设置为可以点击
+      var regBtn = $("#regBtn");
+      $("#regText").change(function () {
+        var that = $(this);
+        that.prop("checked", that.prop("checked"));
+        if (that.prop("checked")) {
+          regBtn.prop("disabled", false);
+          regBtn.addClass("checkdBtn");
+          $("#regBtn").click(function () {
+            window.location.href="preview.html";
+          });
+
+        } else {
+          regBtn.prop("disabled", true);
+          regBtn.removeClass("checkdBtn");
+        }
+      });
+    })
+
+</script>
+</body>

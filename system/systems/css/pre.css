@@ -1,0 +1,100 @@
+/*设置预览页面的所有表格的标题为黑灰色*/
+
+.darkGrey{
+    background: #D7D7D7;
+}
+
+.previewFooter{
+    text-align: center;
+}
+
+.previewFooterTb{
+    border: 1px solid #000000;
+    font-size: 12px;
+}
+
+.previewFooterTb td{
+    padding: 5px;
+}
+
+.previewFooterTitle~tr,.previewFooterTwo~tr{
+    background: #F6F6F6;
+}
+
+.textRight{
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+}
+
+.btntRight{
+    font-weight: bolder;
+    width: 55px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    background-color: #5bc0de;
+    display: inline-block;
+}
+
+.savBtn {
+    color: #FFFFF4;
+    font-weight: bolder;
+    background: darkgray;
+}
+
+.remBtn{
+    color: azure;
+    font-weight: bolder;
+    padding: 2px;
+    font-size: 17px;
+}
+/*预览页面样式*/
+
+.preview, .alignPre{
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+    margin : 0 5%;
+}
+
+.previewTop img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.previewTop{
+    padding: 5px;
+    color: white;
+    background: black;
+    font-size: 15px;
+}
+
+.previewTopNext{
+    color: black;
+    padding: 10px;
+    margin: -3px -4px;
+    background: white;
+}
+
+.alignPre{
+    position: relative;
+    left: 0.2%;
+    width: 90%;
+}
+
+.btnSub{
+    margin-top: -10px;
+    float: right;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bolder;
+    background: #5bc0de;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}

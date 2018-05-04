@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工作经历信息</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<form method="post" action="">
+    <div class="container">
+        <!--上面文字-->
+        <div class="navContainer">
+            <p class="navTop"><img src="image/logo.png" alt="">湖南麓川信息科技有限公司</p>
+            <p class="navBody">
+                新员工入职信息登记
+                <!--<span>工号:<b>20180312</b>|<a>退出</a></span>-->
+            </p>
+            <ul class="navFooter">
+                <li class="gray">1</li>
+                <li class="gray">2</li>
+                <li class="gray1">3</li>
+                <li class="gray">4</li>
+                <li class="gray">5</li>
+                <li class="gray">6</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+
+        <!--工作经历板块1-->
+
+        <div class="bodyContainer">
+
+            <table>
+                <tr class="bodyContainerTop">
+                    <td colspan="4">工作经历(从近到远写)
+                        <span class="addB studyAdd">添加</span>
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        工作单位：&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="workCompany">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftMove"><label for="studyC">工作起止时间：</label>从
+                        <input id="studyC" name="workStart" type="date"/>到
+                        <input class="studyC" name="workEnd" type="date"/>
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        岗位：&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;
+                        <select name="studyStation">
+                            <option value="xz">请选择</option>
+                            <option value="前端">前端</option>
+                            <option value="java">java</option>
+                            <option value="产品">产品</option>
+                            <option value="测试">测试</option>
+                            <option value="人事">人事</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        典型工作内容：&nbsp;&nbsp;&nbsp;&nbsp;
+                        <textarea type="text" name="workContent" cols="50" rows="3"></textarea>
+
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>离职原因：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                        <textarea type="text" name="workReason" cols="50" rows="3"></textarea></td>
+                </tr>
+
+            </table>
+
+            <!--工作经历板块2-->
+
+
+            <table class="studyt1">
+
+                <tr class="bodyContainerFooter">
+                    <td>工作单位：
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="workCompany2">
+                        <span class="splitB studys1">删除</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftMove"><label for="studyD">工作起止时间：</label>从
+                        <input id="studyD" name="workStart2" type="date"/>到
+                        <input class="studyD" name="workEnd2" type="date"/>
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        岗位：
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;
+                        <select name="studyStation2">
+                            <option value="xz">请选择</option>
+                            <option value="前端">前端</option>
+                            <option value="java">java</option>
+                            <option value="产品">产品</option>
+                            <option value="测试">测试</option>
+                            <option value="人事">人事</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        典型工作内容：&nbsp;&nbsp;&nbsp;&nbsp;
+                        <textarea type="text" name="workContent2" cols="50" rows="3"></textarea>
+
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>离职原因：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                        <textarea type="text" name="workReason2" cols="50" rows="3"></textarea></td>
+                </tr>
+
+            </table>
+
+            <!--工作经历板块3-->
+
+            <table class="studyt2 hide">
+
+                <tr class="bodyContainerFooter">
+                    <td>工作单位：
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="workCompany3">
+                        <span class="splitB studys2" style="margin-left: 500px;">删除</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftMove"><label for="studyQ">工作起止时间：</label>从
+                        <input id="studyQ" name="workStart3" type="date"/>到
+                        <input class="studyQ" name="workEnd3" type="date"/>
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        岗位：
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;
+                        <select name="studyStation3">
+                            <option value="xz">请选择</option>
+                            <option value="前端">前端</option>
+                            <option value="java">java</option>
+                            <option value="产品">产品</option>
+                            <option value="测试">测试</option>
+                            <option value="人事">人事</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        典型工作内容：&nbsp;&nbsp;&nbsp;&nbsp;
+                        <textarea type="text" name="workContent3" cols="50" rows="3"></textarea>
+
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>离职原因：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                        <textarea type="text" name="workReason3" cols="50" rows="3"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</form>
+<p>
+    <!--下面按钮-->
+    <div class="footerContainer">
+        <button id="previous">上一步</button>
+        <button id="nextStep">下一步</button>
+<p class="clear"></p>
+</div>
+</p>
+
+<script>
+
+  $("#previous").click(function () {
+    window.location.href = "educate.html";
+  })
+
+
+  $("#nextStep").click(function () {
+    var a = $("[name='workCompany'] ").val();
+    var b = $("[name='workStart'] ").val();
+    // var c = $("input[name='baseSex']:checked").val();
+    var d = $("[name='workEnd'] ").val();
+    var e = $("[name='studyStation'] option:checked").val();
+    var f = $("[name='workContent'] ").val();
+    var g = $("[name='workReason'] ").val();
+
+    var a1 = $("[name='workCompany2'] ").val();
+    var b1 = $("[name='workStart2'] ").val();
+    // var c = $("input[name='baseSex']:checked").val();
+    var d1 = $("[name='workEnd2'] ").val();
+    var e2 = $("[name='studyStation2'] option:checked").val();
+    var f1 = $("[name='workContent2'] ").val();
+    var g1 = $("[name='workReason2'] ").val();
+
+    // var value=(a == "" || a == null || b == "" || b == null || d == ""
+    //   || d == null || e == null || e == "请选择"
+    //   );
+    // if(value==true){
+    //   alert("有空选项未选择");
+    //   return;
+    // };
+
+    // 处理表单验证和交给后台处理的逻辑
+    var userToken = localStorage.getItem("token");
+    $.ajax({
+      type: "POST",
+      url: "http://192.168.0.130:8080/api/v1/workinfo/save",
+      dataType: "json",
+      header:{
+        Accept:"json; charset-utf-8",
+        userToken:"" + userToken
+      },
+      data: {"workCompany": $("[name='workCompany'] ").val(),
+        "workStart":  $("[name='workStart'] ").val(),
+        "workEnd":$("[name='workEnd'] ").val(),
+        "studyStation": $("[name='studyStation'] option:checked").val(),
+        "workContent": $("[name='workContent'] ").val(),
+        "workReason":$("[name='workReason'] ").val(),
+        "workCompany2":$("[name='workCompany2'] ").val(),
+        "workStart2":$("[name='workStart2'] ").val(),
+        "workEnd2":$("[name='workEnd2'] ").val(),
+        "studyStation2":$("[name='studyStation2'] option:checked"),
+        "workContent2": $("[name='workContent2'] ").val(),
+        "workReason2":$("[name='workReason2'] ").val(),
+      },
+
+      success: function (json) {
+        if (json.code == 0) {
+          window.location.href = "family.html";
+          // 录入成功
+        } else {
+          // 录入失败
+          return;
+        }
+      }
+    })
+
+  });
+
+
+  //删除----工作信息
+  $(".studys2").click(function () {
+
+    $(".studyt2").addClass("hide").removeClass("show");
+
+  });
+
+  $(".studys1").click(function () {
+
+    $(".studyt1").addClass("hide").removeClass("show");
+
+  });
+
+
+  // 添加----
+
+  $(".studyAdd").click(function () {
+    $(".studyt2").addClass("show").removeClass("hide");
+
+  });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body{
+    background: #535353;
+    color: #FFFFF4;
+    font-family:"Arial","宋体",sans-serif;
+    font-weight: bolder;
+}
+
+#navTop{
+    text-align: center;
+    margin: 20px 0;
+    padding: 4px;
+    letter-spacing: 3px;
+}
+
+.navCompany{
+    height: 40px;
+   font-size: 30px;
+}
+
+.navCompany img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;/*图片对齐一般用middle*/
+}
+
+#navTop h1{
+    font-size: 55px;
+}
+
+#loginForm table{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#loginForm{
+    margin-top: 50px;
+}
+
+
+#loginForm td{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px;
+}
+
+#loginForm input{
+    height: 30px;
+    width: 200px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.loginBtn{
+    text-align: center;
+
+}
+
+.loginBtn button{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.loginBtn button:hover{
+    background: #5bc0de;
+}
+
+.waring{
+     color: red;
+     font-size: 20px;
+ }

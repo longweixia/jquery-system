@@ -1,0 +1,204 @@
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+}
+
+/*上面文字区样式*/
+
+.navTop{
+    font-size: 25px;
+    color: white;
+    background-color: #000000;
+    padding: 15px;
+    margin-top: 0;
+}
+
+.navTop img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.navBody{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 4px;
+ }
+
+.navBody span{
+    float: right;
+    margin: 15px;
+    font-size: 5px;
+    font-weight: normal;
+}
+
+.navBody span a{
+    color: blue;
+}
+
+/* 页码的样式*/
+ul li{
+    float: left;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 40px;
+    border-radius: 18px;
+    list-style-type: none;
+    color: white;
+}
+
+.gray{
+    background-color: #999999;
+}
+
+
+.gray1{
+    background-color: black;
+}
+
+/*上一步下一步按钮*/
+.hide{
+    display: none;
+}
+
+.show{
+    display:inline-block;
+}
+
+/*清除浮动*/
+.clear{
+    clear: both;
+}
+
+/*中间表格区*/
+.bodyContainer table{
+    width: 800px;
+    margin: 5px 0px 10px 20px;
+    border:  1px solid #000000;
+    text-align: center;
+}
+
+
+.bodyContainerTop{
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: center;
+}
+
+.bodyContainerTop td{
+    font-size: 16px;
+    border-bottom: 1px solid #000000;
+    padding: 8px;
+}
+
+.bodyContainerFooter td{
+    text-align: left;
+    padding: 8px;
+}
+
+/*户口和居住地址输入框*/
+#colsFooter input,#colsFooterTwo input{
+    display: inline-block;
+    width: 580px;
+}
+
+#nextStep,#previous{
+    background: #F2F2F2;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 350px 20px 20px;
+    box-shadow: 2px 2px 2px;
+}
+
+#nextStep{
+    float: right;
+}
+
+#nextStep:hover,#previous:hover{
+    background-color: #5bc0de;
+}
+
+
+/*左移第二个输入框*/
+.leftMove{
+    text-align: left;
+    padding: 7px;
+}
+
+/*提交页提交时提示*/
+.regText label{
+    display: inline-block;
+    font-size: 30px;
+    color: red;
+    margin: 20px 10px 30px 10px;
+    padding: 10px;
+}
+
+.checkdBtn{
+    background:#F2F2F2;
+}
+
+.btnAll{
+    background-color: #F2F2F2;
+}
+
+.regText p{
+    display: inline-block;
+    border: 1px solid #000000;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.regText p:hover{
+   cursor: default;
+}
+
+.btnAll:hover{
+    background-color: #5bc0de;
+}
+
+
+
+
+
+
+/*增加删除按钮*/
+.addB,.splitB{
+    text-align: center;
+    float: right;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.addB:hover,.splitB:hover{
+    background-color: skyblue;
+    cursor: default;
+}
+
+.prompt{
+    float: right;
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.promptNext{
+    color: #535353;
+}
+
+.text-right{
+   text-align: right;
+}

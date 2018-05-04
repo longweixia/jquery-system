@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教育培训信息</title>
+
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教育培训信息</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<form method="post" action="">
+    <div class="container">
+        <!--上面文字-->
+        <div class="navContainer">
+            <p class="navTop"><img src="image/logo.png" alt="">湖南麓川信息科技有限公司</p>
+            <p class="navBody">
+                新员工入职信息登记
+                <!--<span>工号:<b>20180312</b>|<a>退出</a></span>-->
+            </p>
+            <ul class="navFooter">
+                <li class="gray">1</li>
+                <li class="gray1">2</li>
+                <li class="gray">3</li>
+                <li class="gray">4</li>
+                <li class="gray">5</li>
+                <li class="gray">6</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+
+        <!--教育培训板块1-->
+
+        <div class=" bodyContainer">
+            <table>
+                <tr class="bodyContainerTop">
+                    <td colspan="4">教育及培训情况(从高往低写)
+                        <span class="addB educateAdd">添加</span>
+                    </td>
+                </tr>
+                <tr class="bodyContainerFooter">
+                    <td>学校/培训单位：<input type="text" name="educateCompany" required>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftMove"><label for="studyA">学习起止时间：</label>
+                        <input id="studyA" name="educateStart" type="date"/>到
+                        <input class="studyA" name="educateEnd" type="date"/>
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        学历:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select name="educateRecord">
+                            <option value="xz">请选择</option>
+                            <option value="junior">初中</option>
+                            <option value="senior">高中</option>
+                            <option value="junior">专科</option>
+                            <option value="undregraduate">本科</option>
+                            <option value="master">硕士</option>
+                            <option value="doctor">博士</option>
+                            <option value="others">其他</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        专业：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="educateMajor">
+
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>获得证书：&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                        <textarea type="text" name="educateCredentials" cols="50" rows="5"></textarea></td>
+                </tr>
+            </table>
+
+
+            <!--教育培训板块2-->
+            <table class="educate">
+
+                <tr class="bodyContainerFooter">
+                    <td>学校/培训单位：<input type="text" name="educateCompany2">
+                        <span class="splitB educatesb">删除</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftMove"><label for="studyB">学习起止时间：</label>
+                        <input id="studyB" name="educateStart2" type="date"/>到
+                        <input class="studyB" name="educateEnd2" type="date"/>
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        学历:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select name="educateRecord2">
+                            <option value="xz">请选择</option>
+                            <option value="junior">初中</option>
+                            <option value="senior">高中</option>
+                            <option value="junior">专科</option>
+                            <option value="undregraduate">本科</option>
+                            <option value="master">硕士</option>
+                            <option value="doctor">博士</option>
+                            <option value="others">其他</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        专业：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="educateMajor2">
+
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>获得证书：&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                        <textarea type="text" name="educateCredentials2" cols="50" rows="5"></textarea></td>
+                </tr>
+
+            </table>
+
+            <!--教育板块3-->
+
+            <table class="educate1 hide">
+
+                <tr class="bodyContainerFooter">
+                    <td>学校/培训单位：<input type="text" name="educateCompany3">
+                        <span class="splitB educatesc" style="margin-left: 500px;">删除</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftMove"><label for="studyB">学习起止时间：</label>
+                        <input id="studyT" name="educateStart3" type="date"/>到
+                        <input class="studyT" name="educateEnd3" type="date"/>
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        学历:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select name="educateRecord3">
+                            <option value="xz">请选择</option>
+                            <option value="junior">初中</option>
+                            <option value="senior">高中</option>
+                            <option value="junior">专科</option>
+                            <option value="undregraduate">本科</option>
+                            <option value="master">硕士</option>
+                            <option value="doctor">博士</option>
+                            <option value="others">其他</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        专业：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="text" name="educateMajor3">
+
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>获得证书：&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                        <textarea type="text" name="educateCredentials3" cols="50" rows="5"></textarea></td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+</form>
+    <button id="previous" >上一步</button>
+    <button id="nextStep" >下一步</button>
+    <p class="clear"></p>
+<script>
+
+  //删除----教育信息
+  $(".educatesb").click(function () {
+
+    $(".educate ").addClass("hide").removeClass("show");
+
+  });
+
+
+  $(".educatesc").click(function () {
+
+    $(".educate1").addClass("hide").removeClass("show");
+
+  });
+
+
+  // 添加----
+
+  $(".educateAdd").click(function () {
+    $(".educate1").addClass("show").removeClass("hide");
+
+  });
+
+  $("#previous").click(function () {
+    window.location.href = "base.html";
+  })
+
+
+  $("#nextStep").click(function () {
+    var a = $("[name='educateCompany'] ").val();
+    var b = $("[name='educateStart'] ").val();
+    var d = $("[name='educateEnd'] ").val();
+    var e = $("[name='educateRecord'] option:checked").text();
+    var f = $("[name='educateMajor'] ").val();
+    var g = $("[name='educateCredentials'] ").val();
+
+    var a2 = $("[name='educateCompany2'] ").val();
+    var b2 = $("[name='educateStart2'] ").val();
+    var d2 = $("[name='educateEnd2'] ").val();
+    var e2 = $("[name='educateRecord2'] option:checked").text();
+    var f2 = $("[name='educateMajor2'] ").val();
+    var g2 = $("[name='educateCredentials2'] ").val();
+
+    var value=(a=="" || a==null ||b=="" || b==null || d==""|| d==null || e==null || e=="请选择"||
+      f==null || f==""|| g==null || g=="");
+    if(value==true){
+      alert("有空选项未选择");
+      return;
+
+    };
+
+
+
+
+
+    // 处理表单验证和交给后台处理的逻辑
+    var userToken = localStorage.getItem("token");
+    $.ajax({
+      type: "POST",
+      url: "http://192.168.0.130:8080/api/v1/eduinfo/save",
+      dataType: "json",
+      header:{
+        Accept:"json; charset-utf-8",
+        userToken:"" + userToken
+      },
+      data: {"educateCompany": $("[name='educateCompany'] ").val(),
+        "educateStart": $("[name='educateStart'] ").val(),
+        "educateEnd":$("[name='educateEnd'] ").val(),
+        "educateRecord":$("[name='educateRecord'] option:checked").text(),
+        "educateMajor":$("[name='educateMajor'] ").val(),
+        "educateCredentials":$("[name='educateCredentials'] ").val(),
+
+        "educateCompany2": $("[name='educateCompany2'] ").val(),
+        "educateStart2": $("[name='educateStart2'] ").val(),
+        "educateEnd2":$("[name='educateEnd2'] ").val(),
+        "educateRecord2":$("[name='educateRecord2'] option:checked").text(),
+        "educateMajor2":$("[name='educateMajor2'] ").val(),
+        "educateCredentials2":$("[name='educateCredentials2'] ").val(),
+      },
+
+      success: function (json) {
+        if (json.code == 0) {
+          window.location.href="demo/work.html";
+          // 录入成功
+        } else {
+          // 录入失败
+          return;
+        }
+      }
+    })
+
+  })
+
+</script>
+</body>
+</html>

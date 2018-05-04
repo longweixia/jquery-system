@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>麓川登陆管理系统后台</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+</head>
+
+<body>
+<form>
+    <div class="container">
+        <!--上面文字-->
+        <div class="navContainer">
+            <p class="navTop"><img src="image/logo.png" alt="">湖南麓川信息科技有限公司</p>
+            <p class="navBody">
+                新员工入职信息登记
+                <!--<span>工号:<b>20180312</b>|<a>退出</a></span>-->
+            </p>
+            <ul class="navFooter">
+                <li class="gray">1</li>
+                <li class="gray">2</li>
+                <li class="gray">3</li>
+                <li class="gray1">4</li>
+                <li class="gray">5</li>
+                <li class="gray">6</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+
+
+
+        <!--家庭成员及社会关系1-->
+        <div class="bodyContainer" >
+            <table>
+                <tr class="bodyContainerTop">
+                    <td colspan="4">家庭成员及社会关系
+                        <span class="addB familyAdd">添加</span>
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>姓名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <input type="text" name="familyName">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftMove">年龄：&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="familyAge">
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        与本人关系：<input type="text" name="familyRelation">
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        工作单位：&nbsp;&nbsp;
+                        <input type="text" name="familyCompany">
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>职位：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="familyPosition"></td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>联系电话：&nbsp;&nbsp;
+                        <input type="text" name="familyTel"></td>
+                </tr>
+
+            </table>
+
+
+            <!--家庭成员及社会关系2-->
+
+            <table class="familyt1">
+
+                <tr class="bodyContainerFooter">
+                    <td>姓名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="familyName2">
+                        <span class="splitB familys1">删除</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftMove">年龄：
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="familyAge2">
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        与本人关系：<input type="text" name="familyRelation2">
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        工作单位：&nbsp;&nbsp;&nbsp;<input type="text" name="familyCompany2">
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>职位：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
+                                                                                        name="familyPosition2"></td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>联系电话：&nbsp;&nbsp;<input type="text" name="familyTel2"></td>
+                </tr>
+
+            </table>
+
+
+            <!--家庭成员及社会关系3-->
+
+            <table class="familyt2 hide">
+
+                <tr class="bodyContainerFooter">
+                    <td>姓名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="familyName3">
+                        <span class="splitB familys2" style="margin-left: 500px; ">删除</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftMove">年龄：
+                        &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="familyAge3">
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        与本人关系：<input type="text" name="familyRelation3">
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        工作单位：&nbsp;&nbsp;&nbsp;<input type="text" name="familyCompany3">
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>职位：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
+                                                                                        name="familyPosition3"></td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>联系电话：&nbsp;&nbsp;<input type="text" name="familyTel3"></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+</form>
+
+<p>
+    <!--下面按钮-->
+    <div class="footerContainer">
+        <button id="previous">上一步</button>
+        <button id="nextStep">下一步</button>
+<p class="clear"></p>
+</div>
+</p>
+
+
+<script>
+  $("#previous").click(function () {
+    window.location.href = "work.html";
+  })
+
+  $("#nextStep").click(function () {
+    var a = $("[name='familyName'] ").val();
+    var b = $("[name='familyAge'] ").val();
+    var d = $("[name='familyRelation'] ").val();
+    var e = $("[name='familyCompany'] ").val();
+    var f = $("[name='familyPosition'] ").val();
+    var g = $("[name='familyTel'] ").val();
+
+
+      var a1 = $("[name='familyName2'] ").val();
+      var b1= $("[name='familyAge2'] ").val();
+      var d1 = $("[name='familyRelation2'] ").val();
+      var e1 = $("[name='familyCompany2'] ").val();
+      var f1 = $("[name='familyPosition2'] ").val();
+      var g1= $("[name='familyTel2'] ").val();
+
+
+
+    var value = (a=="" || a==null ||b=="" || b==null || d==""|| d==null || e==null || e==""||
+      f==null || f==""|| g==null || g==""
+      // ||a1=="" || a1==null ||b1=="" || b1==null || d1==""|| d1==null || e1==null || e1==""||
+      // f1==null || f1==""|| g1==null || g1==""
+    );
+    if(value==true){
+      alert("有空选项未选择");
+      return;
+    }
+
+
+
+    // 处理表单验证和交给后台处理的逻辑
+    var userToken = localStorage.getItem("token");
+    $.ajax({
+      type: "POST",
+      url: "http://192.168.0.130:8080/api/v1/familyinfo/sava",
+      dataType: "json",
+      header:{
+        Accept:"json; charset-utf-8",
+        userToken:"" + userToken
+      },
+      data: {
+        "familyName": $("[name='familyName'] ").val(),
+        "familyAge": $("[name='familyAge'] ").val(),
+        "familyRelation": $("[name='familyRelation'] ").val(),
+        "familyCompany": $("[name='familyCompany'] ").val(),
+        "familyPosition": $("[name='familyPosition'] ").val(),
+        "familyTel": $("[name='familyTel'] ").val(),
+
+
+        "familyName1": $("[name='familyName2'] ").val(),
+        "familyAge1": $("[name='familyAge2'] ").val(),
+        "familyRelation1": $("[name='familyRelation2'] ").val(),
+        "familyCompany1": $("[name='familyCompany2'] ").val(),
+        "familyPosition1": $("[name='familyPosition2'] ").val(),
+        "familyTel1": $("[name='familyTel2'] ").val(),
+      },
+
+      success: function (json) {
+        if (json.code == 0) {
+          window.location.href = "contacts.html";
+          // 录入成功
+        } else {
+          // 录入失败
+          return;
+        }
+      }
+    })
+
+  });
+
+  //删除----家庭成员
+  $(".familys2").click(function () {
+
+    $(".familyt2").addClass("hide").removeClass("show");
+
+  });
+
+
+  $(".familys1").click(function () {
+
+    $(".familyt1").addClass("hide").removeClass("show");
+
+  });
+
+
+  // 添加----
+
+  $(".familyAdd").click(function () {
+    $(".familyt2").addClass("show").removeClass("hide");
+
+  });
+</script>
+</body>
+</html>

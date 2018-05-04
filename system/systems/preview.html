@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>麓川登陆管理系统后台</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/pre.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+
+
+<div class="preview">
+    <!--顶部文字信息-->
+    <div class="previewTop">
+        <p><img src="image/logo.png" alt="">湖南麓川信息科技有限公司</p>
+        <p class="previewTopNext">员工入职登记表
+            <button class="btnSub">提交</button>
+        </p>
+    </div>
+</div>
+<!--基本信息-->
+<div class="previewFooter">
+    <form method="post" action="">
+        <table class="previewFooterTb alignPre">
+            <tr class="bodyContainerTop previewFooterTitle">
+                <td colspan="2" class="darkGrey">基本信息
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight">编辑</button>
+                </td>
+            </tr>
+
+            <tr class="bodyContainerFooter">
+                <td><span class="textRight">姓名：</span>
+                    <input class="baseUseName" name="baseUseName">
+                </td>
+                <td>
+                    <span class="textRight">入职部门：</span>
+                    <input class="baseEntrySection" name="baseEntrySection">
+                </td>
+            </tr>
+
+            <tr class="bodyContainerFooter">
+                <td>
+                    <span class="textRight">性别:</span>
+                    <input class="baseSex" name="baseSex">
+                </td>
+                <td>
+                    <span class="textRight">入职岗位：</span>
+                    <input class="baseStation" name="baseStation">
+                </td>
+            </tr>
+
+            <tr class="bodyContainerFooter">
+                <td>
+                    <span class="textRight">出生日期：</span>
+                    <input class="baseDateBirth" name="baseDateBirth">
+
+                </td>
+                <td>
+                    <span class="textRight">入职时间：</span>
+                    <input class="baseEntryDate" name="baseEntryDate">
+                </td>
+            </tr>
+
+            <tr class="bodyContainerFooter">
+                <td><span class="textRight">身高：</span><input class="baseHeight" name="baseHeight"></td>
+                <td>
+                    <span class="textRight">学历：</span>
+                    <input class="baseRecord" name="baseRecord">
+                </td>
+            </tr>
+
+            <tr class="bodyContainerFooter">
+                <td><span class="textRight">体重：</span>
+                    <input class="baseWeight" name="baseWeight"></td>
+                <td><span class="textRight">毕业院校：</span>
+                    <input class="baseUniversity" name="baseUniversity"></td>
+            </tr>
+
+            <tr class="bodyContainerFooter">
+                <td>
+                    <span class="textRight">籍贯：省份：</span>
+                    <input class="baseProvince" name="baseProvince"><br>
+                    <span class="textRight">城市：</span>
+                    <input class="baseCity" name="baseCity">
+
+                </td>
+                <td><span class="textRight">专业：</span>
+                    <input class="baseMajor" name="baseMajor"></td>
+            </tr>
+
+            <tr class="bodyContainerFooter">
+                <td><span class="textRight">民族：</span>
+                    <input class="baseNation" name="baseNation">
+                </td>
+                <td><span class="textRight">联系电话：</span>
+                    <input class="baseTel" name="baseTel"></td>
+            </tr>
+
+            <tr class="bodyContainerFooter">
+                <td><span class="textRight">婚姻：</span>
+                    <input class="baseMarriage" name="baseMarriage">
+                </td>
+                <td><span class="textRight">微信号：</span>
+                    <input class="baseWeChat" name="baseWeChat"></td>
+            </tr>
+
+            <tr class="bodyContainerFooter">
+                <td><span class="textRight">身份证号：</span>
+                    <input class="baseId" name="baseId"></td>
+                <td><span class="textRight">邮箱地址：</span>
+                    <input class="baseMail" name="baseMail"></td>
+            </tr>
+
+            <tr class="bodyContainerFooter">
+                <td colspan="2"><span class="textRight">户口所在地：</span>
+                    <input class="baseResidencePlace" name="baseResidencePlace"></td>
+            </tr>
+
+            <tr class="bodyContainerFooter">
+                <td colspan="2"><span class="textRight">现居住地址：</span>
+                    <input class="baseAddress" name="baseAddress"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<!--教育及培训情况（由高往低写）-->
+
+<div class="previewFooter">
+    <form method="post" action="">
+        <table class="previewFooterTb alignPre">
+
+            <tr class="bodyContainerTop previewFooterTitle">
+                <td class="darkGrey" colspan="6">教育及培训情况（由高往低写）
+                    <button class="btntRight">编辑</button>
+                </td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+
+                <td class="darkGrey">学校/培训单位</td>
+                <td class="darkGrey">学习起止时间</td>
+                <td class="darkGrey">学历</td>
+                <td class="darkGrey">专业</td>
+                <td class="darkGrey" colspan="2">相关证书</td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="educateCompany" name="educateCompany"></td>
+                <td><input class="educateStart" name="educateStart">至<input class="educateEnd" name="educateEnd">
+                </td>
+                <td><input class="educateRecord" name="educateRecord"></td>
+                <td><input class="educateMajor" name="educateMajor"></td>
+                <td><input class="educateCredentials" name="educateCredentials"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="educateCompany2" name="educateCompany2"></td>
+                <td><input class="educateStart2" name="educateStart2">至<input class="educateEnd2"
+                                                                              name="educateEnd2"></td>
+                <td><input class="educateRecord2" name="educateRecord2"></td>
+                <td><input class="educateMajor2" name="educateMajor2"></td>
+                <td><input class="educateCredentials2" name="educateCredentials2"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="educateCompany3" name="educateCompany3"></td>
+                <td><input class="educateStart3" name="educateStart3">至<input class="educateEnd"></td>
+                <td><input class="educateRecord3" name="educateRecord3"></td>
+                <td><input class="educateMajor3" name="educateMajor3"></td>
+                <td><input class="educateCredentials3" name="educateCredentials3"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<!--工作经历（由近往前写）-->
+<div class="previewFooter">
+    <form method="post" action="">
+        <table class="previewFooterTb alignPre">
+            <tr class="bodyContainerTop previewFooterTitle">
+                <td colspan="7" class="darkGrey">工作经历（由近往前写）
+                    <button class="btntRight">编辑</button>
+                </td>
+            </tr>
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td class="darkGrey">单位名称</td>
+                <td class="darkGrey">工作起止时间</td>
+                <td class="darkGrey">职位</td>
+                <td class="darkGrey">典型工作内容</td>
+                <td class="darkGrey" colspan="2">离职原因</td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="workCompany" name="workCompany"></td>
+                <td><input class="workStart" name="workStart">至<input class="educateEnd" name="educateEnd"></td>
+                <td><input class="studyStation" name="studyStation"></td>
+                <td><input class="workContent" name="workContent"></td>
+                <td><input class="workReason" name="workReason"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="workCompany2" name="workCompany2"></td>
+                <td><input class="workStart2" name="workStart2">至<input class="workEnd2" name="workEnd2"></td>
+                <td><input class="studyStation2" name="studyStation2"></td>
+                <td><input class="workContent2" name="workContent2"></td>
+                <td><input class="workReason2" name="workReason2"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="workCompany3" name="workCompany3"></td>
+                <td><input class="workStart3" name="workStart3">至<input class="workEnd3" name="workEnd3"></td>
+                <td><input class="studyStation3" name="studyStation3"></td>
+                <td><input class="workContent3" name="workContent3"></td>
+                <td><input class="workReason3" name="workReason3"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<!--主要社会关系-->
+
+<div class="previewFooter">
+    <form action="" method="post">
+        <table class="previewFooterTb relation alignPre">
+            <tr class="bodyContainerTop previewFooterTitle">
+                <td colspan="7" class="darkGrey">主要社会关系
+                    <button class="btntRight">编辑</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="darkGrey">姓名</td>
+                <td class="darkGrey">关系</td>
+                <td class="darkGrey">年龄</td>
+                <td class="darkGrey">工作单位</td>
+                <td class="darkGrey">职务</td>
+                <td class="darkGrey" colspan="2">联系电话</td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="familyName" name="familyName"></td>
+                <td><input class="familyAge" name="familyAge"></td>
+                <td><input class="familyRelation" name="familyRelation"></td>
+                <td><input class="familyCompany" name="familyCompany"></td>
+                <td><input class="familyPosition" name="familyPosition"></td>
+                <td><input class="familyTel" name="familyTel"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="familyName2" name="familyName2"></td>
+                <td><input class="familyAge2" name="familyAge2"></td>
+                <td><input class="familyRelation2" name="familyRelation2"></td>
+                <td><input class="familyCompany2" name="familyCompany2"></td>
+                <td><input class="familyPosition2" name="familyPosition2"></td>
+                <td><input class="familyTel2" name="familyTel2"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="familyName3" name="familyName3"></td>
+                <td><input class="familyAge3" name="familyAge3"></td>
+                <td><input class="familyRelation3" name="familyRelation3"></td>
+                <td><input class="familyCompany3" name="familyCompany3"></td>
+                <td><input class="familyPosition3" name="familyPosition3"></td>
+                <td><input class="familyTel3" name="familyTel3"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<!--紧急联系人-->
+
+
+<div class="previewFooter">
+    <form method="post" action="">
+        <table class="previewFooterTb relation alignPre">
+            <tr class="bodyContainerTop previewFooterTitle">
+                <td colspan="5" class="darkGrey">紧急联系人
+                    <button class="btntRight">编辑</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="darkGrey">姓名</td>
+                <td class="darkGrey">关系</td>
+                <td class="darkGrey">单位或住址</td>
+                <td class="darkGrey" colspan="2">联系电话</td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="contactsName" name="contactsName"></td>
+                <td><input class="contactsRelation" name="contactsRelation"></td>
+                <td><input class="contactsCompany" name="contactsCompany"></td>
+                <td><input class="contactsTel" name="contactsTel"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="contactsName2" name="contactsName2"></td>
+                <td><input class="contactsRelation2" name="contactsRelation2"></td>
+                <td><input class="contactsCompany2" name="contactsCompany2"></td>
+                <td><input class="contactsTel2" name="contactsTel2"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+
+            <tr class=" previewFooterTitle previewFooterTwo">
+                <td><input class="contactsName3" name="contactsName3"></td>
+                <td><input class="contactsRelation3" name="contactsRelation3"></td>
+                <td><input class="contactsCompany3" name="contactsCompany3"></td>
+                <td><input class="contactsTel3" name="contactsTel3"></td>
+                <td>
+
+                    <button class="btntRight savBtn">保存</button>
+                    <button class="btntRight remBtn">删除</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+  var userToken = localStorage.getItem("token");
+  $(function () {
+    // 查询出所有信息并显示
+    $.ajax({
+      type: "GET",
+      url: "http://192.168.0.130:8080/api/v1/previewinfo",
+      dataType: "json",
+      header: {
+        Accept: "json; charset-utf-8",
+        userToken: "" + userToken
+      },
+      data: {},
+
+      success: function (json) {
+        if (json.code == 0) {
+          // 查询成功
+        } else {
+          // 查询失败
+          return;
+        }
+      }
+    })
+
+
+    // 教育信息删除
+    $.ajax({
+      type: "post",
+      url: "http://192.168.0.130:8080/api/v1/edu_del",
+      dataType: "json",
+      header:{
+        Accept:"json; charset-utf-8",
+        userToken:"" + userToken
+      },
+      data: {
+        "deuId": id值
+      },
+
+      success: function (json) {
+        if (json.code == 0) {
+          // 教育信息删除成功
+        } else {
+          // 教育信息删除失败
+          return;
+        }
+      }
+    })
+
+
+    // 工作信息删除
+    $.ajax({
+      type: "post",
+      url: "http://192.168.0.130:8080/api/v1/workinfo/del",
+      dataType: "json",
+      header:{
+        Accept:"json; charset-utf-8",
+        userToken:"" + userToken
+      },
+      data: {
+        "workId": id值
+      },
+
+      success: function (json) {
+        if (json.code == 0) {
+          // 工作信息删除成功
+
+        } else {
+          // 工作信息删除失败
+          return;
+        }
+      }
+    })
+
+
+    // 家庭信息删除
+    $.ajax({
+      type: "post",
+      url: "http://192.168.0.130:8080/api/v1/familyinfo/del",
+      dataType: "json",
+      header:{
+        Accept:"json; charset-utf-8",
+        userToken:"" + userToken
+      },
+      data: {
+        "familyId": id值
+      },
+
+      success: function (json) {
+        if (json.code == 0) {
+          // 家庭信息删除成功
+        } else {
+          // 家庭信息删除失败
+          return;
+        }
+      }
+    })
+
+
+    // 紧急联系人信息删除
+    $.ajax({
+      type: "post",
+      url: "http://192.168.0.130:8080/api/v1/urgentinfo/del",
+      dataType: "json",
+      header:{
+        Accept:"json; charset-utf-8",
+        userToken:"" + userToken
+      },
+      data: {
+        "urgentId": id值
+      },
+
+      success: function (json) {
+        if (json.code == 0) {
+          // 紧急联系人信息删除成功
+        } else {
+          // 紧急联系人信息删除失败
+          return;
+        }
+      }
+    })
+
+
+    // 总提交
+    $.ajax({
+      type: "post",
+      url: "http://192.168.0.130:8080/api/v1/submit",
+      dataType: "json",
+      header:{
+        Accept:"json; charset-utf-8",
+        userToken:"" + userToken
+      },
+      data: {
+
+      },
+
+      success: function (json) {
+        if (json.code == 0) {
+          // 信息提交成功
+        } else {
+          // 信息提交失败
+          return;
+        }
+      }
+    })
+  })
+</script>
+</body>
+</html>

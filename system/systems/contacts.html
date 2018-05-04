@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>紧急联系人信息</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<form action="" method="post">
+    <div class="container">
+        <!--上面文字-->
+        <div class="navContainer">
+            <p class="navTop"><img src="image/logo.png" alt="">湖南麓川信息科技有限公司</p>
+            <p class="navBody">
+                新员工入职信息登记
+                <!--<span>工号:<b>20180312</b>|<a>退出</a></span>-->
+            </p>
+            <ul class="navFooter">
+                <li class="gray">1</li>
+                <li class="gray">2</li>
+                <li class="gray">3</li>
+                <li class="gray">4</li>
+                <li class="gray1">5</li>
+                <li class="gray">6</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+
+
+        <!--紧急联系人1-->
+        <div class="bodyContainer">
+            <table>
+                <tr class="bodyContainerTop">
+                    <td colspan="4">紧急联系人
+                        <span class="addB contactsAdd">添加</span>
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>姓名：&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;
+
+                        <input type="text" name="contactsName">
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        与本人关系：
+                        &nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                        <input type="text" name="contactsRelation">
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        工作单位或住址：<input type="text" name="contactsCompany">
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>联系电话：
+                        &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="contactsTel"></td>
+                </tr>
+
+            </table>
+
+
+            <!--紧急联系人2-->
+
+            <table class="contactst1">
+
+                <tr class="bodyContainerFooter">
+                    <td>姓名：
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                        <input type="text" name="contactsName2">
+                        <span class="splitB contactss1">删除</span>
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        与本人关系：
+                        &nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                        <input type="text" name="contactsRelation2">
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        工作单位或住址：<input type="text" name="contactsCompany2">
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>联系电话：
+                        &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="contactsTel2"></td>
+                </tr>
+
+            </table>
+
+            <!--紧急联系人3-->
+
+            <table class="contactst2 hide">
+
+                <tr class="bodyContainerFooter">
+                    <td>姓名：
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                        <input type="text" name="contactsName3">
+                        <span class="splitB contactss2" style="margin-left: 500px;">删除</span>
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        与本人关系：
+                        &nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                        <input type="text" name="contactsRelation3">
+                    </td>
+                </tr>
+
+
+                <tr class="bodyContainerFooter">
+                    <td>
+                        工作单位或住址：<input type="text" name="contactsCompany3">
+                    </td>
+                </tr>
+
+                <tr class="bodyContainerFooter">
+                    <td>联系电话：
+                        &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="contactsTel3"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+    </p>
+    </div>
+</form>
+<p>
+    <!--下面按钮-->
+    <div class="footerContainer">
+        <button id="previous" onclick="skipW()">上一步</button>
+        <button id="nextStep" >下一步</button>
+         <p class="clear"></p>
+    </div>
+<script>
+  function skipW() {
+    window.location.href="demo/family.html";
+  }
+
+  $("#nextStep").click(function () {
+    var a = $("[name='contactsName'] ").val();
+    var b = $("[name='contactsRelation'] ").val();
+    var d = $("[name='contactsCompany'] ").val();
+    var e = $("[name='contactsTel'] ").val();
+    // var f = $("[name='contactsName2'] ").val();
+    // var g = $("[name='contactsRelation2'] ").val();
+    // var q = $("[name='contactsCompany2'] ").val();
+    // var t = $("[name='contactsTel2'] ").val();
+
+   // (a=="" || a==null ||b=="" || b==null || d==""|| d==null || e==null || e==""||
+   //    f==null || f==""|| g==null || g==""|| t==null || t==""|| q==null || q=="");
+   if(a=="" || a==null ||b=="" || b==null || d==""|| d==null || e==null || e==""){
+     alert("有空选项未选择");
+     return;
+   }
+
+
+    // 处理表单验证和交给后台处理的逻辑
+    var userToken = localStorage.getItem("token");
+    $.ajax({
+      type: "POST",
+      url: "http://192.168.0.130:8080/api/v1/urgentinfo/sava",
+      dataType: "json",
+      header:{
+        Accept:"json; charset-utf-8",
+        userToken:"" + userToken
+      },
+      data: {"contactsName": $("[name='contactsName'] ").val(),
+        "contactsRelation": $("[name='contactsRelation'] ").val(),
+        "contactsCompany":$("[name='contactsCompany'] ").val(),
+        "contactsTel":$("[name='contactsTel'] ").val(),
+        "contactsName2": $("[name='contactsName2'] ").val(),
+        "contactsRelation2": $("[name='contactsRelation2'] ").val(),
+        "contactsCompany2":$("[name='contactsCompany2'] ").val(),
+        "contactsTel2":$("[name='contactsTel2'] ").val()
+      },
+
+      success: function (json) {
+        if (json.code == 0) {
+          // 录入成功
+          window.location.href="confirm.html";
+        } else {
+          // 录入失败
+          return;
+        }
+      }
+    })
+  });
+
+// $(function () {
+//   function fun(){
+//     var $td = $(".bodyContainer table").clone();       //增加一行,克隆第一个对象
+//     $(".bodyContainer").append($td);
+//     var i = 1;
+//
+//     $(".bodyContainer table:last").val('');   //将尾行元素克隆来的保存的值清空
+//   }
+//
+//   function del(){
+//     $(".bodyContainer table:not(:first):not(:first):last").remove();      //移除最后一行,并且保留前两行
+//   }
+// })
+//
+
+
+
+
+
+
+  //删除----紧急联系人
+  $(".contactss2").click(function () {
+
+    $(".contactst2").addClass("hide").removeClass("show");
+
+  });
+
+
+  $(".contactss1").click(function () {
+
+    $(".contactst1").addClass("hide").removeClass("show");
+
+  });
+
+
+  // 添加----
+
+  $(".contactsAdd").click(function () {
+    $(".contactst2").addClass("show").removeClass("hide");
+
+  });
+</script>
+</body>
+</html>
